@@ -1,0 +1,17 @@
+,,,,,
+,,,,,
+,,,,,
+,Task 1: Performance Results for Different Sentiment Classifiers,,,,
+,Method,Precision,Recall,F1-Score,Accuracy
+,Logistic Regression,74.26%,73.79%,73.73%,73.79
+,Linear SVM,74.04%,73.59%,73.54%,73.59%
+,FinBERT (No Fine-Tuning),57.96%,48.18%,45.94%,48.18%
+,FinBERT + LoRA,75.00%,74.00%,74.00%,74.25%
+,FinBERT + LoRA (minimal preprocessing),77.73%,77.41%,77.43%,77.41%
+,FinBERT + LoRA (min. preproc.+ !? counts),77.74%,77.39%,77.42%,77.39%
+,FinBERT + QLoRA ,74.83%,74.55%,74.56%,74.55%
+,FinBERT + QLoRA (minimal preprocessing),77.21%,76.83%,76.85%,76.83%
+,FinBERT + QLoRA (min. preproc.+ !? counts),77.60%,77.35%,77.37%,77.35%
+,,,,,
+,,,,,
+,All FinBERT methods use metadata,,,,

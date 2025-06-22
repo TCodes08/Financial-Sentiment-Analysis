@@ -1,0 +1,2 @@
+,Precision (Macro Avg),Recall (Macro Avg),F1-Score (Macro Avg),Overall Accuracy
+FinBERT + LoRA,0.7482747880595054,0.7454981992797118,0.7455854378745167,0.7454981992797118

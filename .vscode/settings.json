@@ -1,0 +1,5 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/sentimentAnalysis-venv/bin/python",
+    "python.analysis.typeEvaluation.deprecateTypingAliases": true
+
+}

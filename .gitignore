@@ -1,0 +1,26 @@
+# Ignore virtual environment
+sentimentAnalysis-venv/
+
+# Ignore dataset/archive
+dataset/archive/
+
+# Ignore all logs
+logs/
+
+# Ignore all model weights/configs
+models/
+
+# Ignore specific notebook subfolders not ready
+notebooks/semi_supervised_src/
+notebooks/app_demo/
+
+# Ignore Python bytecode and caches
+__pycache__/
+src/__pycache__/
+
+# Optional extras (common for Python projects)
+*.pyc
+*.pyo
+*.pyd
+*.ipynb_checkpoints
+.DS_Store
