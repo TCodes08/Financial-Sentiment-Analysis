@@ -58,7 +58,7 @@ financial_sentimentAnalysis/
 ## Trained Models
 
 Pre-trained model weights are available on Google Drive:
-- [Download Models](https://drive.google.com/drive/folders/1e8mLFUIz0NMY_Omw9RAJkx2t8AUla78J?usp=share_link)
+- [Download Models](https://huggingface.co/Financial-Sentiment-Analysis/model-weights/tree/main/models/v1-1/baseline)
 
 ## Key Findings
 
