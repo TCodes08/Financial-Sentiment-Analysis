@@ -46,11 +46,12 @@ jupyter notebook notebooks/baseline_src/FinBERT+LoRA_baseline.ipynb
 ```
 financial_sentimentAnalysis/
 ├── notebooks/
-│   └── baseline_src/         # Baseline experiments
+│   ├── baseline_src/         # Baseline experiments
+│   └── semisupervised_src/   # Semisupervised experiments
 ├── src/                      # Helper functions
 │   ├── preprocessing.py      # Text preprocessing
 │   └── evaluation_*.py       # Evaluation metrics
-├── dataset/                  # Data files (not included)
+├── dataset/                  # Data files (see below)
 ├── models/                   # Trained models (see below)
 └── evaluation/               # Results and metrics
 ```
@@ -74,9 +75,16 @@ Pre-trained model weights are available on Google Drive:
 - **QLoRA**: 4-bit quantization with bfloat16
 - **Training**: 5 epochs, learning rate=2e-5
 
+### Datasets
+
+- For Phase 1, this GitHub repo provides `initial_balanced_tweets.csv` for train/val, and `test_set.csv`
+- For Phase 2, datasets can be accessed [here](https://huggingface.co/datasets/Financial-Sentiment-Analysis/datasets/tree/main/phase2)
+- Download and place each dataset into `dataset` folder in this GitHub repository
+- Or generate using `FinBERT_Generate_Pseudolabels.ipynb` and `Create_Semisupervised_Datasets.ipynb` under `notebooks/semisupervised_src` in this GitHub repository
+
 ## Coming Soon
 
-- Semi-supervised learning experiments (230k+ tweets)
+- Semi-supervised learning experiments (240k+ tweets)
 - Web application for real-time sentiment analysis
 - Integration with live market data
 

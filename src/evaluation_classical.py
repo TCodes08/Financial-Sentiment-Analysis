@@ -9,7 +9,7 @@ from datetime import datetime
 from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
 from sklearn.model_selection import validation_curve, learning_curve
 
-def evaluate_classical_model(pipeline, X_train, y_train, X_test, y_test, model_name=None, save_dir=None):
+def evaluate_classical_model(pipeline, X_train, y_train, X_test, y_test, model_name=None, save_dir=None, param_name='logistic_model__C'):
     if model_name is None:
         model_name = os.path.splitext(os.path.basename(sys.argv[0]))[0]
 
@@ -56,7 +56,7 @@ def evaluate_classical_model(pipeline, X_train, y_train, X_test, y_test, model_n
     C_values = np.logspace(-3, 2, 10)
     train_scores, val_scores = validation_curve(
         pipeline, X_train, y_train,
-        param_name='logistic_model__C',
+        param_name=param_name,
         param_range=C_values,
         cv=5,
         scoring='accuracy',
